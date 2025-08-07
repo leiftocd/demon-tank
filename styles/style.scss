@@ -605,8 +605,9 @@ main {
                     display: flex;
                     position: relative;
                     width: 100%;
-                    img {
+                    > img {
                         width: 100%;
+                        border: 3px solid #fff;
                         border-radius: 30px;
                         object-fit: cover;
                     }
@@ -712,8 +713,9 @@ main {
                     display: flex;
                     position: relative;
                     width: 100%;
-                    img {
+                    > img {
                         width: 100%;
+                        border: 3px solid #fff;
                         border-radius: 30px;
                         object-fit: cover;
                     }
@@ -1709,6 +1711,8 @@ main {
     main {
         #banner {
             .banner-header {
+                gap: 4rem;
+                padding: 0.5rem 2rem;
                 .logo {
                     font-size: 20px !important;
                 }
@@ -1809,6 +1813,7 @@ main {
             h2 {
                 font-size: 36px;
                 -webkit-text-stroke-width: 2px;
+                padding: 5rem 0 3rem !important;
             }
             .intro-container {
                 display: grid;
@@ -1949,7 +1954,7 @@ main {
             .banner-header {
                 padding: 0.5rem 2rem;
                 margin: 0 2rem 0;
-                gap: 0 !important;
+                gap: 3rem !important;
                 .nav {
                     font-size: 16px !important;
                 }
@@ -1962,7 +1967,7 @@ main {
             }
             .banner-container {
                 padding: 0 3rem !important;
-                margin-top: 1rem;
+                margin-top: 3rem;
                 gap: 1rem;
                 p {
                     font-size: 16px !important;
@@ -2009,6 +2014,8 @@ main {
             }
         }
         #intro {
+            min-height: unset;
+            padding-bottom: 5rem;
             .intro-container {
                 gap: 4rem !important;
             }
@@ -2221,11 +2228,12 @@ main {
                     max-width: 60%;
                     text-align: center;
                     justify-content: center;
+                    margin-top: 2rem;
                     .mb {
                         display: flex !important;
                     }
                     img {
-                        max-width: 60% !important;
+                        max-width: 100% !important;
                     }
                 }
             }
@@ -2328,6 +2336,7 @@ main {
             }
             .intro-container {
                 flex-direction: column;
+                display: flex;
                 .intro-container_text {
                     position: relative !important;
                     text-align: center;
@@ -2363,6 +2372,11 @@ main {
                 gap: 10rem;
                 .product-left {
                     width: 75%;
+                    .wrapper-rocket {
+                        > img {
+                            border: 2px solid #fff;
+                        }
+                    }
                     .product-left_title {
                         .apr {
                             font-size: 30px;
@@ -2383,6 +2397,11 @@ main {
                 }
                 .product-right {
                     width: 75%;
+                    .wrapper-ufo {
+                        > img {
+                            border: 2px solid #fff;
+                        }
+                    }
                     .product-right_title {
                         .apr {
                             font-size: 30px;

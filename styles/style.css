@@ -575,8 +575,9 @@ main #product .product-container .product-left .wrapper-rocket {
   position: relative;
   width: 100%;
 }
-main #product .product-container .product-left .wrapper-rocket img {
+main #product .product-container .product-left .wrapper-rocket > img {
   width: 100%;
+  border: 3px solid #fff;
   border-radius: 30px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -684,8 +685,9 @@ main #product .product-container .product-right .wrapper-ufo {
   position: relative;
   width: 100%;
 }
-main #product .product-container .product-right .wrapper-ufo img {
+main #product .product-container .product-right .wrapper-ufo > img {
   width: 100%;
+  border: 3px solid #fff;
   border-radius: 30px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1512,6 +1514,10 @@ main .linebot img {
   }
 }
 @media screen and (max-width: 1024px) {
+  main #banner .banner-header {
+    gap: 4rem;
+    padding: 0.5rem 2rem;
+  }
   main #banner .banner-header .logo {
     font-size: 20px !important;
   }
@@ -1599,6 +1605,7 @@ main .linebot img {
   main #intro h2 {
     font-size: 36px;
     -webkit-text-stroke-width: 2px;
+    padding: 5rem 0 3rem !important;
   }
   main #intro .intro-container {
     display: grid;
@@ -1711,7 +1718,7 @@ main .linebot img {
   main #banner .banner-header {
     padding: 0.5rem 2rem;
     margin: 0 2rem 0;
-    gap: 0 !important;
+    gap: 3rem !important;
   }
   main #banner .banner-header .nav {
     font-size: 16px !important;
@@ -1724,7 +1731,7 @@ main .linebot img {
   }
   main #banner .banner-container {
     padding: 0 3rem !important;
-    margin-top: 1rem;
+    margin-top: 3rem;
     gap: 1rem;
   }
   main #banner .banner-container p {
@@ -1754,6 +1761,10 @@ main .linebot img {
   main .section-group #about .about-container .tablet-about {
     right: 0 !important;
     justify-content: flex-end;
+  }
+  main #intro {
+    min-height: unset;
+    padding-bottom: 5rem;
   }
   main #intro .intro-container {
     gap: 4rem !important;
@@ -1952,12 +1963,13 @@ main .linebot img {
     max-width: 60%;
     text-align: center;
     justify-content: center;
+    margin-top: 2rem;
   }
   main #banner .banner-container .banner-container_right .mb {
     display: flex !important;
   }
   main #banner .banner-container .banner-container_right img {
-    max-width: 60% !important;
+    max-width: 100% !important;
   }
   main .section-group {
     padding: 0 0 5rem;
@@ -2052,6 +2064,7 @@ main .linebot img {
   }
   main #intro .intro-container {
     flex-direction: column;
+    display: flex;
   }
   main #intro .intro-container .intro-container_text {
     position: relative !important;
@@ -2088,6 +2101,9 @@ main .linebot img {
   main #product .product-container .product-left {
     width: 75%;
   }
+  main #product .product-container .product-left .wrapper-rocket > img {
+    border: 2px solid #fff;
+  }
   main #product .product-container .product-left .product-left_title .apr {
     font-size: 30px;
   }
@@ -2105,6 +2121,9 @@ main .linebot img {
   }
   main #product .product-container .product-right {
     width: 75%;
+  }
+  main #product .product-container .product-right .wrapper-ufo > img {
+    border: 2px solid #fff;
   }
   main #product .product-container .product-right .product-right_title .apr {
     font-size: 30px;
